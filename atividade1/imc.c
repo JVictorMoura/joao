@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <math.h>
 
 
@@ -18,8 +17,6 @@
     float imc = peso / (pow (altura, 2));
 
     printf ("O IMC eh: %.2f\n", imc);
-
-    system("pause");
 
    
     return 0;
