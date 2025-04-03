@@ -5,15 +5,14 @@
         float a, b;
         
 
-        printf ("escolha um numero: 1 ou 2\n");
+        printf ("selecione uma opcao\n1 = subrtracao.\n2 = adicao.\n");
         scanf ("%d", &i);
         printf("selecione numeros\n");
         scanf ("%f %f", &a, &b);
         int adicao = a + b;
         int subtracao = a - b;
 
-        switch (1)
-        {
+        
         
         switch (i)
         {
@@ -23,7 +22,7 @@
             break;
 
         case 2:
-        printf ("a adicao é: %d\n", adicao);
+        printf ("a adicao eh: %d\n", adicao);
         break;
 
         
@@ -32,7 +31,7 @@
         break;
 
         }
-        }
+        
 
         return 0;
 }
