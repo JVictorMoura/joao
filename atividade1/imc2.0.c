@@ -16,6 +16,8 @@
 
     float imc = peso / (pow (altura, 2));
 
+    printf ("IMC = %.2f\n", imc);
+
    if (imc <= 18.5){
     printf ("peso abaixo do normal.\n");
    }
@@ -35,7 +37,5 @@
     printf ("obesidade classe III.\n");
     }
 
-
-   
     return 0;
 }
