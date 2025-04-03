@@ -23,7 +23,7 @@
            printf("Digite o valor do raio do circulo:\n"); 
        scanf("%f", &raio);
 
-       float area = 3.14 * (powf (raio, 2));
+        area = 3.14 * (powf (raio, 2));
        
        printf("A area do circulo eh: %.2f\n", area);
            
@@ -44,7 +44,7 @@
             printf("Digite o valor do lado do quadrado:\n");
         scanf("%f", &lado);
 
-        float area = lado * lado;
+        area = lado * lado;
 
         printf("A area do quadrado eh: %.2f\n", area);
             break;
@@ -68,7 +68,7 @@
         printf("Digite o valor da altura do triangulo:\n");
         scanf("%f", &altura);
 
-        float area = (base * altura) / 2;
+        area = (base * altura) / 2;
         
         printf("A area do triangulo eh: %.2f\n", area);
 
@@ -93,6 +93,7 @@
         printf ("opcao invalida.\n");
             break;
         }
+    printf ("a area eh: %.2f", area);
     
     return 0;
 }
