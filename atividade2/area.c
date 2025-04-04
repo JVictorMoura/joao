@@ -4,7 +4,7 @@
     int main(int argc, char* argv[]){
         char escolha;
         float circulo, losangulo, quadrado, retangulo, triangulo, trapezio;
-        float raio, lado1, lado2, lado, base, altura, base1, base2;
+        float raio, lado1, lado2, lado, base, altura, base1, base2, area;
 
         printf ("area.c\nEscolha uma opcao:\n");
         printf ("c - Circulo\n");
@@ -19,7 +19,7 @@
 
         switch (escolha)
         {
-        case 'c':
+        case 'c': //definir o caracter com "''" para variavel char.
            printf("Digite o valor do raio do circulo:\n"); 
        scanf("%f", &raio);
 
@@ -93,7 +93,7 @@
         printf ("opcao invalida.\n");
             break;
         }
-    printf ("a area eh: %.2f", area);
+    
     
     return 0;
 }
