@@ -1,10 +1,10 @@
 #include <stdio.h>
 int main(int argc, char *argv[])
 {
-    int tipo, tipo2, tipo3;
+    int tipo, tipo2, tipo3, escolha;
     printf("Escolha o tipo do seu filme.\nSelecione 1 para filme LEVE e 2 para filme INTENSO.\n");
     scanf("%d", &tipo);
-
+do {
     switch (tipo)
     {
 
@@ -72,7 +72,10 @@ int main(int argc, char *argv[])
     default:
         printf("\nescolha invalida.\n");
         break;
-    }
+        printf("quer escolher outro filme?\n1 para SIM.              2 para NAO.");
+        scanf ("%d", &escolha);
+        }}
+    while (escolha == 1);
 
     return 0;
 }
