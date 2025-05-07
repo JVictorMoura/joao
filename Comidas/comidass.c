@@ -5,20 +5,15 @@ int main(int argc, char *argv[]) // funçao principal
     int escolha1, subregiao, tipo, pais, escolha2; // variaveis do tipo inteiro que serao usadas
 
     do
-    { // laço de repeticao para rodar o codigo novamente caso o usuario queira
+    {                 // laço de repeticao para rodar o codigo novamente caso o usuario queira
+        escolha2 = 0; // garantir que o programa será executado normalmente se for selecionado a repetição do mesmo.
         printf("Descobrindo comidas de diferentes paises!!\n");
 
-        do
-        {                                    // laço para garantir que o programa va ter continuidade
-            printf("Escolha uma regiao:\n"); // usando print para dar instruções, opções e mostrar os resultados para o resultado das suas escolhas
-            printf("1 - Ocidente\n");        //\n para quebrar a linha dentro do prompt de comando quando estiver sendo executado
-            printf("2 - Oriente\n");
-            scanf("%d", &escolha1);             //%d para inteiro, "&" para armazenar o valor na variavel pretendida, no caso: "escolha1"
-            if (escolha1 != 1 && escolha1 != 2) // estrutura condicional, ela avalia se a condiçao dela é verdadeira, se sim, ela executa o que está dentro das chaves, no caso, a opção de erro
-            {
-                printf("Opcao invalida! Tente novamente.\n");
-            } // se a condição for falsa, todo o bloco do "if" será ignorado, e continuará lendo a partir da linha 21.
-        } while (escolha1 != 1 && escolha1 != 2); // condiçao para que leia as linhas dentro de "do" || "!=" é um operador de comparação, no caso, ele esta vendo se "escolha1" é DIFERENTE de 1 ou 2.
+        printf("Escolha uma regiao:\n"); // usando print para dar instruções, opções e mostrar os resultados para o resultado das suas escolhas
+        printf("1 - Ocidente\n");        //\n para quebrar a linha dentro do prompt de comando quando estiver sendo executado
+        printf("2 - Oriente\n");
+        printf("Selecione qualquer outro numero para encerrar o programa.\n");
+        scanf("%d", &escolha1); //%d para inteiro, "&" para armazenar o valor na variavel pretendida, no caso: "escolha1"
 
         switch (escolha1) // estrutura condicional para valores que foi dado para a variavel "escolha1"
         {
@@ -122,7 +117,7 @@ int main(int argc, char *argv[]) // funçao principal
                     }
                 }
             }
-            break; // final das linhas lidas caso "escolha1" = 1. Caso seja diferente de 1, a compilaçao continuará apartir da linha 126, ignorando tudo dentro de case 1:
+            break; // final das linhas lidas caso "escolha1" = 1. Caso seja diferente de 1, a compilaçao continuará apartir da linha 121, ignorando tudo dentro de case 1:
 
         case 2: // quando "escolha1" for = 2, sera executado todo o codigo entre "case 2" e "break". Ou seja, todas essas linhas serao ignoradas caso "escolha1" != 2
                 // a partir daqui, haverá repetição dos comandos utilizados nas linhas anteriores
@@ -226,11 +221,16 @@ int main(int argc, char *argv[]) // funçao principal
             }
             break; // final do codigo que será executado caso "escolha1" = 2.
         }
-
-        printf("Deseja descobrir outra comida?\nSe SIM, digite 1\nSe NAO, digite qualquer outro numero.\n");
-        scanf("%d", &escolha2);
+        if (escolha1 == 1 || escolha1 == 2) // para perguntar se quer ver novamente se caso o usuário tenha escolhido uma opção válida no menu principal
+        {
+            printf("Deseja descobrir outra comida?\nSe SIM, digite 1\nSe NAO, digite qualquer outro numero.\n");
+            scanf("%d", &escolha2);
+        }
 
     } while (escolha2 == 1); // condicional para que o codigo após "do" rode novamente. Caso o usuario escolha 1, o programa rodará novamente, ja que "escolha2" = 1
-
+    if (escolha2 != 1) // mostrar ao usuário que o programa se encerrou devido a sua decisão.
+    {
+        printf("Programa encerrado.");
+    }
     return 0;
 }
