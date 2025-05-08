@@ -19,8 +19,8 @@ int main(int argc, char *argv[]) // funçao principal
         {
         case 1: // quando "escolha1" for = 1, sera executado as seguintes linhas de codigo: limitadas pelo "break"
             do
-            { // escolha da sub regiao
-                printf("Escolha uma subregiao:\n");
+            { // escolha da sub-regiao
+                printf("Escolha uma sub-regiao:\n");
                 printf("1 - America do Norte\n");
                 printf("2 - America do Sul\n");
                 scanf("%d", &subregiao);              // guardando o resultado na varivel
@@ -28,7 +28,7 @@ int main(int argc, char *argv[]) // funçao principal
                 {
                     printf("Opcao invalida! Tente novamente.\n");
                 }
-            } while (subregiao != 1 && subregiao != 2); // travar o usuário caso nao seja uma resposta satisfatória
+            } while (subregiao != 1 && subregiao != 2); // caso a condição dentro dos parênteses seja verdadeira, o bloco de comandos dentro de "do" irá se repetir || travar o usuário caso nao seja uma resposta satisfatória
 
             do
             {
@@ -60,26 +60,26 @@ int main(int argc, char *argv[]) // funçao principal
                 {
                     if (pais == 1) // if dentro de if: o bloco entre as chaves de "if" sera realizada caso o tipo escolhido seja "1"
                     {
-                        printf("Algumas comidas salgadas dos EUA:\nHamburguer\nHot Dog\nMac and Cheese\n");
+                        printf("Algumas comidas salgadas dos EUA:\nHamburguer\nHot Dog\nMac and Cheese (macarrao e queijo)\n");
                     }
                     else // caso a condição do "if" referente ao país seja falsa, o bloco de comandos entre as chaves desse "else" será executado
                     {
-                        printf("Algumas comidas salgadas do Canada:\nPoutine\nTourtiere\nPeameal bacon\n");
+                        printf("Algumas comidas salgadas do Canada:\nPoutine (batatas fritas cobertas com queijo coalho)\nTourtiere (torta de carne)\nPeameal bacon (tipo de bacon canadense)\n");
                     }
                 }
                 else               // caso a condição do "if" referente ao tipo seja falsa, o bloco de comandos entre as chaves desse "else" será executado
                 {                  //=doces
                     if (pais == 1) // condicional, bloco de comandos entre chaves executado caso "pais == 1" seja verdadeiro
                     {
-                        printf("Algumas comidas doces dos EUA:\nBrownie\nDonuts\nCookies\n");
+                        printf("Algumas comidas doces dos EUA:\nBrownie (bolinho de chocolate)\nDonuts (rosquinha)\nCookies\n");
                     }
                     else // caso a condição do "if" q antecede esse "else" seja falsa, o bloco de comandos de "else" será executado
                     {
-                        printf("Algumas comidas doces do Canada:\nButter Tarts\nNanaimo Bars\nMaple Fudge\n");
+                        printf("Algumas comidas doces do Canada:\nButter Tarts (tortinhas amanteigadas)\nNanaimo Bars (sobremesa em formato de barra)\nMaple Fudge (doce de xarope de boldo, acucar e creme)\n");
                     }
                 }
             }
-            else // caso a condição do "if" referente a subregiao seja falsa, o bloco de comandos desse "else" será executado
+            else // caso a condição do "if" referente a sub-regiao seja falsa, o bloco de comandos desse "else" será executado
             {
 
                 do // estrutura de repetição
@@ -102,7 +102,7 @@ int main(int argc, char *argv[]) // funçao principal
                     }
                     else // caso a condição do "if" referente ao país seja falsa, o bloco de comandos entre as chaves desse "else" será executado
                     {
-                        printf("Algumas comidas salgadas da Argentina:\nAsado\nEmpanadas\nMilanesa\n");
+                        printf("Algumas comidas salgadas da Argentina:\nAsado (churrasco)\nEmpanadas (tortilhas salgadas recheadas)\nMilanesa (carne empanada e frita)\n");
                     }
                 }
                 else               // caso a condição do "if" referente ao tipo seja falsa, o bloco de comandos entre as chaves desse "else" será executado
@@ -113,17 +113,17 @@ int main(int argc, char *argv[]) // funçao principal
                     }
                     else // caso a condição do "if" q antecede esse "else" seja falsa, o bloco de comandos de "else" será executado
                     {
-                        printf("Algumas comidas doces da Argentina:\nAlfajor\nDoce de leite\nChurros\n");
+                        printf("Algumas comidas doces da Argentina:\nAlfajor (biscoito recheadas com doce de leite)\nDoce de leite\nChurros\n");
                     }
                 }
             }
-            break; // final das linhas lidas caso "escolha1" = 1. Caso seja diferente de 1, a compilaçao continuará apartir da linha 121, ignorando tudo dentro de case 1:
+            break; // final das linhas lidas caso "escolha1" = 1. Caso seja diferente de 1, a compilaçao continuará a partir da linha 121, ignorando tudo dentro de case 1:
 
         case 2: // quando "escolha1" for = 2, sera executado todo o codigo entre "case 2" e "break". Ou seja, todas essas linhas serao ignoradas caso "escolha1" != 2
                 // a partir daqui, haverá repetição dos comandos utilizados nas linhas anteriores
             do
             {
-                printf("Escolha uma subregiao:\n"); // definindo a subregiao
+                printf("Escolha uma sub-regiao:\n"); // definindo a sub-regiao
                 printf("1 - Asia Oriental\n");
                 printf("2 - Asia Meridional\n");
                 scanf("%d", &subregiao);
@@ -163,26 +163,26 @@ int main(int argc, char *argv[]) // funçao principal
                 {
                     if (pais == 1) //"if" dentro de "if" | caso a condição seja verdadeira, o bloco de comandos desse if será executado
                     {
-                        printf("Algumas comidas salgadas do Japao:\nSushi\nRamen\nTempura\n");
+                        printf("Algumas comidas salgadas do Japao:\nSushi (arroz temperado combinado com peixe ou vegetais)\nRamen (sopa japonesa)\nTempura (empanado japones)\n");
                     }
                     else // caso a condição do "if" referente a pais seja falsa, esse "else" terá seu bloco de comandos realizado
                     {
-                        printf("Algumas comidas salgadas da Coreia do Sul:\nBibimbap\nBulgogi\nSamgyeopsal\n");
+                        printf("Algumas comidas salgadas da Coreia do Sul:\nBibimbap (arroz misturado com legumes, carne, ovo e pasta de pimenta)\nBulgogi (carne marinada e grelhada)\nSamgyeopsal (barriga de porco grelhada)\n");
                     }
                 }
                 else // caso a condição do "if" referente a tipo seja falsa, esse "else" terá seu bloco de comandos executado
                 {
                     if (pais == 1) //"if" dentro de "else" | caso a condição seja verdadeira, o bloco de comandos desse if será executado
                     {
-                        printf("Algumas comidas doces do Japao:\nMochi\nDorayaki\nDango\n");
+                        printf("Algumas comidas doces do Japao:\nMochi (arroz glutinoso)\nDorayaki (panquecas recheadas com pasta de feijao doce)\nDango (Dango sao bolinhos de arroz espetados e servidos com molho doce)\n");
                     }
                     else // caso a condição do "if" referente a pais seja falsa, esse "else" terá seu bloco de comandos realizado
                     {
-                        printf("Algumas comidas doces da Coreia do Sul:\nBingsu\nYakgwa\nHotteok\n");
+                        printf("Algumas comidas doces da Coreia do Sul:\nBingsu (gelo triturado com acompanhamentos)\nYakgwa (doce coreano frito com mel e oleo de gergelim)\nHotteok (panqueca frita coreana recheada com acucar, mel e canela)\n");
                     }
                 }
             }
-            else // caso a condição do "if" referente a subregião seja falso, o bloco de comandos desse "else" será executado
+            else // caso a condição do "if" referente a sub-região seja falso, o bloco de comandos desse "else" será executado
             {
                 do // estrutura de repetição
                 {
@@ -200,22 +200,22 @@ int main(int argc, char *argv[]) // funçao principal
                 {
                     if (pais == 1) //"if" dentro de "if" | caso a condição seja verdadeira, o bloco de comandos desse if será executado
                     {
-                        printf("Algumas comidas salgadas da India:\nBiryani\nSamosa\nChole Bhature\n");
+                        printf("Algumas comidas salgadas da India:\nBiryani (arroz temperado com especiarias)\nSamosa (salgado frito, geralmente em forma triangular)\nChole Bhature (composto por grao-de-bico (chole) cozido com especiarias e servido com pao frito)\n");
                     }
                     else // caso a condição do "if" referente a pais seja falsa, esse "else" terá seu bloco de comandos realizado
                     {
-                        printf("Algumas comidas salgadas de Bangladesh:\nBhuna\nKacchi Biryani\nShorshe Ilish\n");
+                        printf("Algumas comidas salgadas de Bangladesh:\nBhuna (curry espesso, com carne e temperos refogados ate caramelizarem)\nKacchi Biryani (prato de arroz e carne marinada cozidos juntos com temperos fortes)\nShorshe Ilish (prato bengali de peixe hilsa cozido em molho de mostarda)\n");
                     }
                 }
                 else // caso a condição do "if" referente a tipo seja falsa, esse "else" terá seu bloco de comandos executado
                 {
                     if (pais == 1) //"if" dentro de "else" | caso a condição seja verdadeira, o bloco de comandos desse if será executado
                     {
-                        printf("Algumas comidas doces da India:\nGulab Jamun\nJalebi\nRasgulla\n");
+                        printf("Algumas comidas doces da India:\nGulab Jamun (bolinhas fritas de massa de leite em po)\nJalebi (massa frita em forma de espiral, mergulhada em uma calda doce de acucar)\nRasgulla (bolinhas de queijo fresco (chhena) cozidas em calda de acucar)\n");
                     }
                     else // caso a condição do "if" referente a pais seja falsa, esse "else" terá seu bloco de comandos realizado
                     {
-                        printf("Algumas comidas doces de Bangladesh:\nMishti Doi\nChomchom\nSandesh\n");
+                        printf("Algumas comidas doces de Bangladesh:\nMishti Doi (sobremesa tradicional de Bengala, feita de iogurte doce)\nChomchom (feita de massa de queijo fresco (chhena) que eh cozida e moldada em formato alongado. Depois, eh mergulhada em calda de acucar)\nSandesh (sobremesa tradicional bengali feita de queijo fresco (chhena))\n");
                     }
                 }
             }
@@ -230,7 +230,7 @@ int main(int argc, char *argv[]) // funçao principal
     } while (escolha2 == 1); // condicional para que o codigo após "do" rode novamente. Caso o usuario escolha 1, o programa rodará novamente, ja que "escolha2" = 1
     if (escolha2 != 1) // mostrar ao usuário que o programa se encerrou devido a sua decisão.
     {
-        printf("Programa encerrado.");
+        printf("Programa encerrado.");//mensagem de encerramento de programa.
     }
     return 0;
 }
