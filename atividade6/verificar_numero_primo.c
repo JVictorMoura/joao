@@ -23,7 +23,7 @@ int main(int argc, char* argv[])
         }
     }
 
-    if (primo == 1)//se as condições anteriores nao alterarem o valor de "primo", ele permanecerá "1"
+    if (primo == 1)//se as condições anteriores nao alterarem o valor de "primo", ele permanecerá "1".
     {
         printf("%d eh um numero primo.\n", numero);
     }
