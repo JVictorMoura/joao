@@ -33,4 +33,5 @@ int main(int argc, char* argv[])
     }
 
     return 0;
-}
+}//meu commit estava vindo para o repositorio de forma parcial, copiei e colei o codigo do vs code direto para essa file no github,
+//não sei se fazer direto no git interfere em algo, então estou explicando
