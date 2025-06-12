@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
         printf("erro ao abrir arquivo\n");
         return 1;
     }
-    while (fscanf(arq, "%d, %f", &x, &y) != EOF) // end of file
+    while (fscanf(arq, "%d,%f", &x, &y) != EOF) // end of file
     {
         qtd_linhas++; // verificando a quantidade de numeros
         // printf("%2.f\n", n);
