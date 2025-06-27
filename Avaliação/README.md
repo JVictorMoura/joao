@@ -8,4 +8,4 @@
 
 -O programa irá ler o conteúdo do arquivo, alocar dinamicamente a memória para armazenar os dados, ordenar os dados em ordem alfabética (se forem nomes) ou crescente (se forem números) e, por fim, criar um novo arquivo com o mesmo nome do original, acrescido do sufixo _sorted, contendo os dados já ordenados.
 
--Verifique o resultado abrindo o novo arquivo gerado pelo programa. Ele conterá os dados ordenados conforme o tipo informado.
+-Verifique o resultado abrindo o novo arquivo gerado pelo programa. Ele conterá os dados ordenados conforme o tipo informado na execução do codigo.
