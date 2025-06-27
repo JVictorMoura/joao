@@ -2,7 +2,7 @@
 #include <stdlib.h> //Biblioteca para malloc, realloc, free, etc
 #include <string.h> //Biblioteca para manipulacao de strings (strcpy, strcmp, etc)
 
-#define MAX_LINHA 100 // Define o tamanho maximo de uma linha lida do arquivo (99 caracteres, 100º sera o "\0")
+#define MAX_LINHA 100 // Define o tamanho maximo de uma linha lida do arquivo (99 caracteres, o 100º sera o "\0")
 
 int main(int argc, char *argv[])
 {
