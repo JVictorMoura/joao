@@ -10,4 +10,6 @@
 
 -Verifique o resultado abrindo o novo arquivo gerado pelo programa. Ele conterá os dados ordenados conforme o tipo informado na execução do codigo.
 
+
+
 obs: João Gabriel faz parte do grupo 1.
