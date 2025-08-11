@@ -67,7 +67,7 @@ int main(int argc, char *argv)
 
         if (nmr_aluno < 1 || nmr_aluno > quantidade_alunos)
         {
-            printf("Escolha invalida.\n");
+            printf("Escolha invalida.\n"); 
         }
         else
         {
