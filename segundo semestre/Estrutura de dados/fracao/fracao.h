@@ -1,5 +1,5 @@
 //funcoes e structs / cabeçalho
-#ifndef fracao_h
+#ifndef fracao_h //evita inserçao de linhas repetidas
 #define fracao_h
 
 
