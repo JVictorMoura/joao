@@ -1,11 +1,10 @@
 #include <stdio.h>//inclusao das funcoes/incluir bibliotecas, inclusive a "xxx.h"
 #include <stdlib.h>
 #include <math.h>
-
 #include "fracao.h"
 
 
-fracao criarfracao(int n, int d)
+fracao criarfracao(int n, int d)//funcao dentro de funcao??
 {
     fracao f; // struct fracao f
     f.Num = n;
