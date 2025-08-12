@@ -1,11 +1,9 @@
-#include <stdio.h>
+#include <stdio.h>//inclusao das funcoes/incluir bibliotecas, inclusive a "xxx.h"
 #include <stdlib.h>
 #include <math.h>
-typedef struct
-{
-    int Num;
-    int Den;
-} fracao;
+
+#include "fracao.h"
+
 
 fracao criarfracao(int n, int d)
 {
@@ -39,7 +37,7 @@ fracao SimplificarFracao(fracao f)
 void ExibirFracao(fracao f)
 {
 
-    printf("%d / %d", f.Num, f.Den);
+    printf("%d / %d\n", f.Num, f.Den);
 }
 fracao SomaFracao(fracao f, fracao g)
 {
@@ -57,37 +55,3 @@ fracao SubtracaoFracao(fracao f, fracao g)
     resposta = SimplificarFracao(resposta);
     return (resposta);
 }
-/*
-
-    fracao f;
-    int resto;
-    int mdc;
-    int dividendo_temp;
-    do {
-    if (f.Num % f.Den != 0){
-
-    }
-
-    }while (resto == 0);
-}*/
-
-int main()
-
-{
-    /*fracao f1 = criarfracao(30, 40);
-    f1 = SimplificarFracao(f1);
-    ExibirFracao(f1);
-    printf ("%d %d", f1.Num, f1.Den);
-    printf("%f\n", (float)f1.Num / f1.Den);
-
-
-   printf ("%d", calcularMDS(-30, 40))*/
-
-    fracao f5 = criarfracao(2, 4);
-    fracao f6 = criarfracao(4, 9);
-    fracao f7 = SomaFracao(f5, f6);
-    ExibirFracao(f7);
-    return 0;
-}
-
-// fracao divindo numerador pelo denominador analisando o resto, caso seja diferente de 0, sera dividido o denominador pelo resto ate dar 0 no resto,
