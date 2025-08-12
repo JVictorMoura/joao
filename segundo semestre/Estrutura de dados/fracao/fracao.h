@@ -1,4 +1,9 @@
-//funcoes e structs
+//funcoes e structs / cabeçalho
+#ifndef fracao_h
+#define fracao_h
+
+
+
 typedef struct
 {
     int Num;
@@ -11,3 +16,5 @@ fracao SimplificarFracao(fracao f);
 void ExibirFracao(fracao f);
 fracao SomaFracao(fracao f, fracao g);
 fracao SubtracaoFracao(fracao f, fracao g);
+
+#endif
